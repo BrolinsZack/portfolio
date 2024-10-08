@@ -393,6 +393,19 @@ h6 {
   color: #ffffff;
   position: relative;
   display: inline;
+  font-size: 2rem; /* Default size for smaller devices */
+}
+
+@media (min-width: 768px) { /* For tablets and larger devices */
+  .typing-text {
+    font-size: 1.5rem; /* Reduced size for larger devices */
+  }
+}
+
+@media (min-width: 1200px) { /* For larger screens */
+  .typing-text {
+    font-size: 1.2rem; /* Further reduced size */
+  }
 }
 
 .typing {
@@ -530,14 +543,6 @@ h6 {
 #intro .img img {
   width: 100%;
   position: relative;
-  -webkit-mask: url(../img/clip.webp);
-  mask: url(../img/clip.webp);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  border-radius: 4px;
-  cursor: grab;
 }
 
 #about {
